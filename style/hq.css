@@ -1,0 +1,17 @@
+:root {
+    --vermelho: #141414;
+    --preta: gold;
+}
+header nav a:hover{
+    color: #141414;
+}
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../IMG/hq/principal.jpg); /*Anexa imagem e altera cor geral pra destacar o texto*/
+    height: 400px;
+    background-size: cover; /*Faz a foto cobrir o fundo da div*/
+    display: flex; /*Coloca as divs alinhadas em linha(vertical)*/
+    flex-direction: column; /*Coloca os elementos alinhados em coluna (horizontal)*/
+    justify-content: center; /*Centraliza os elementos no meio do conteiner*/
+    align-items: flex-start; /*Faz os elementos iniciarem a esquerda, parecido com float left*/
+}

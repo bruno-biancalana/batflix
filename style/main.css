@@ -1,0 +1,98 @@
+:root {
+    --vermelho: #FFD700;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--Elementos base--*/
+body {
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #FFD700;
+}
+
+/*--Filme principal--*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../IMG/Filmes/principal.jpg); /*Anexa imagem e altera cor geral pra destacar o texto*/
+    height: 400px;
+    background-size: cover; /*Faz a foto cobrir o fundo da div*/
+    display: flex; /*Coloca as divs alinhadas em linha(vertical)*/
+    flex-direction: column; /*Coloca os elementos alinhados em coluna (horizontal)*/
+    justify-content: center; /*Centraliza os elementos no meio do conteiner*/
+    align-items: flex-start; /*Faz os elementos iniciarem a esquerda, parecido com float left*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px; 
+    margin-bottom: 40px; /*Distancia do texto e dos botões*/
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50); /*Efeito de transparencia no background*/
+    border: black;
+    color: white;
+    padding: 15px 30px; /*Aumenta o tamanho da "caixa" do botão */
+    margin-right: 15px; /*Aumenta a distancia entre os botões*/
+    font-size: 12px;
+    cursor: pointer; /*Muda o cursor do mouse quado passa sobre o botão*/
+    transition: .3s ease all;  /*Tempo de transição da mudança de cor do botão*/
+}
+
+.botao:hover{
+    background-color:white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px; /*Distancia entre botão e icone*/
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container {
+    width: 70%;
+}
+/*Define tamanho das miniaturas no carrossel*/
+.box-filme {
+    height:100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}

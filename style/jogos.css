@@ -1,0 +1,25 @@
+:root {
+    --vermelho: #0282f9;
+    --preta: #141414;
+}
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../IMG/Jogos/principal.jpg); /*Anexa imagem e altera cor geral pra destacar o texto*/
+    height: 400px;
+    background-size: cover; /*Faz a foto cobrir o fundo da div*/
+    display: flex; /*Coloca as divs alinhadas em linha(vertical)*/
+    flex-direction: column; /*Coloca os elementos alinhados em coluna (horizontal)*/
+    justify-content: center; /*Centraliza os elementos no meio do conteiner*/
+    align-items: flex-start; /*Faz os elementos iniciarem a esquerda, parecido com float left*/
+}
+
+.jogo-principal .descricao{
+    margin-top: 10px; 
+    margin-bottom: 40px; /*Distancia do texto e dos botões*/
+}
+.jogo-principal .container {
+    width: 70%;
+}
+header nav a:hover{
+    color: #0282f9;
+}
